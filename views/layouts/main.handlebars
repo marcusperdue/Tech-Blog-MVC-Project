@@ -12,24 +12,23 @@
   <header>
    <nav>
     <div class="logo">Tech Blog</div>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/dashboard">dashboard</a></li>
-      <li><a><button id="logout" class="btn-no-style logout">logout</button></a></li>
-      {{#if isAuthenticated}}
-        <li><a href="/logout">Logout</a></li>
-      {{else}}
+   <nav>
+ <ul>
+    <li><a href="/">Home</a></li>
+    {{#if loggedIn}}
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><button id="logout" class="btn-no-style logout">logout</button></li>
+    {{else}}
         <li><a href="/login">Login</a></li>
-      {{/if}}
-    </ul>
-  </nav>
+    {{/if}}
+</ul>
+    </nav>
   </header>
 
   <main class="container">
     {{{body}}}
   </main>
 
-<script src="/js/login.js"></script>
 <script src="/js/logout.js"></script>
 
 

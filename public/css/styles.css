@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background-color: #333;
+    background-color: #151515;
     color: #fff;
     padding: 10px 0;
   }
@@ -61,22 +61,116 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: #151515;
     color: #fff;
     text-align: center;
     padding: 10px 0;
   }
   
 /*--------------login page-------------*/
-  .login-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Adjust as needed for your layout */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;  
+  height: 100vh; 
+}
+
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;  
 }
 
 .form-section {
-    text-align: center;
-    margin-bottom: 20px;
+  width: 100%;  
+  max-width: 400px;  
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #151515; /* Changed background color to match sign-up page */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-signup-btn:hover {
+  background-color: #151515; /* Changed background color on hover */
+}
+
+.sign-in-link {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Adjust the width of input fields */
+.entry-field {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Apply margin to login button and label */
+.login-signup-btn {
+  margin-top: 10px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+/*--------------sign in page-------------*/
+.sign-in-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Center everything within the form */
+.signup-form {
+  text-align: center;
+}
+
+/* Adjust the width of input fields */
+.entry-field {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login-signup-btn{
+  margin-top: 10px;
+}
+label{
+  margin-top: 10px;
+}
+ 
+
+
+
+
