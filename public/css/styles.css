@@ -59,21 +59,66 @@ body {
     margin: 20px auto;
     padding: 0 20px;
   }
-  
+
   footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #151515;
     color: #fff;
     text-align: center;
     padding: 10px 0;
   }
+
+/*--------------home page-------------*/
+ul.post-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start;  
+}
+
+ul.post-list li {
+  margin-bottom: 20px;  
+}
+
+.post-name a {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.blog-card {
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 8px;  
+  padding: 20px;  
+  margin: 10px;  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.2s, box-shadow 0.2s;  
   
+}
+
+ 
+
+p.comment-subtitle{
+font-size: 2em;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);  
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);   
+
+}
 /*--------------login page-------------*/
 .login-page {
   display: flex;
   flex-direction: column;
   align-items: center;  
   justify-content: center;  
-  height: 100vh; 
+margin-top: 30px;
 }
 
 .form-heading {
@@ -103,7 +148,7 @@ label {
 .login-signup-btn {
   width: 100%;
   padding: 10px;
-  background-color: #151515; /* Changed background color to match sign-up page */
+  background-color: #151515;  
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -111,7 +156,7 @@ label {
 }
 
 .login-signup-btn:hover {
-  background-color: #151515; /* Changed background color on hover */
+  background-color: #151515; 
 }
 
 .sign-in-link {
@@ -121,17 +166,21 @@ label {
   text-decoration: none;
   color: #007bff;
 }
+ 
+.nav-links li {
+  margin-left: 20px; 
+}
 
-/* Adjust the width of input fields */
+
 .entry-field {
   width: 100%;
-  max-width: 300px; /* Adjust the maximum width as needed */
+  max-width: 300px;  
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
 
-/* Apply margin to login button and label */
+
 .login-signup-btn {
   margin-top: 10px;
 }
@@ -146,18 +195,17 @@ label {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
 }
 
-/* Center everything within the form */
+ 
 .signup-form {
   text-align: center;
 }
 
-/* Adjust the width of input fields */
 .entry-field {
   width: 100%;
-  max-width: 300px; /* Adjust the maximum width as needed */
+  max-width: 300px;  
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -178,8 +226,14 @@ label{
   display: flex;
   justify-content: center;  
   align-items: center;  
-  height: 80vh;  
+  height: 30vh;  
  }
+ #create-new-post {
+  width: 200px;  
+  height: 50px;  
+  font-size: 1.2rem;  
+}
+
 /*--------------create-post  page-------------*/
 .center-container {
   display: flex;
@@ -190,3 +244,16 @@ label{
 .form-section{
   width:500px;
 }
+
+ /*-----------post info------------*/
+ 
+ .comment{
+  margin-top: 50px;;
+ }
+ .text{
+  font-size: 20px;
+ }
+
+ p{
+  font-size: 20px;
+ }
