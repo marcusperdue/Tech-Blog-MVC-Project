@@ -6,6 +6,7 @@ const {
     Comment
 } = require('../models');
 
+
 router.get('/', (req, res) => {
     Post.findAll({
             attributes: [
