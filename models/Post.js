@@ -4,7 +4,14 @@ const {
 } = require('sequelize');
 const sequelize = require('../config/connection');
 
-
+sequelize.sync({ force: false }) // Set force to true to drop and recreate tables (use with caution)
+  .then(() => {
+    console.log('Database and tables are synchronized.');
+  })
+  .catch((error) => {
+    console.error('Error synchronizing the database:', error);
+  }); 
+  
 class Post extends Model {}
 
 Post.init({

@@ -5,7 +5,14 @@ const {
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
-
+sequelize.sync({ force: false }) // Set force to true to drop and recreate tables (use with caution)
+  .then(() => {
+    console.log('Database and tables are synchronized.');
+  })
+  .catch((error) => {
+    console.error('Error synchronizing the database:', error);
+  }); 
+  
 class User extends Model {
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
