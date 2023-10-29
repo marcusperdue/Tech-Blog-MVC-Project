@@ -3,12 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('/images/background.jpeg');  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-attachment: fixed;
+    background-color: #011e2c;
   }
   
   header {
-    background-color: #151515;
-    color: #fff;
+    background-color: #1515158d;
+    color: #ffffff;
     padding: 10px 0;
+    backdrop-filter: blur(10px)
   }
   
   nav {
@@ -38,7 +44,7 @@ body {
   
   a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
   }
   .btn-no-style {
     background: none;
@@ -54,21 +60,28 @@ body {
     outline: none;  
 }
   
-  .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;  
+  text-align: center;  
+}
+
 
   footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #151515;
+    background-color: #1515158d;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    backdrop-filter: blur(10px)
   }
 
 /*--------------home page-------------*/
@@ -85,26 +98,24 @@ ul.post-list li {
 }
 
 .post-name a {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 25px;
 }
 .post-name a:hover {
-  color: #ffea71; /* Change the text color on hover */
+  color: #6e6e6e;; 
 }
 
 .blog-card {
-  background-color: #fff; 
-  border: 1px solid #ccc; 
+  background-color: #000000c5; 
   border-radius: 8px;  
   padding: 20px;  
   margin: 10px;  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
   transition: transform 0.2s, box-shadow 0.2s;  
   width: 500px;
+  backdrop-filter: blur(10px)
 }
-
- 
 
 p.comment-subtitle{
 font-size: 2em;
@@ -133,7 +144,7 @@ margin-top: 30px;
   width: 100%;  
   max-width: 400px;  
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #000000;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -151,15 +162,25 @@ label {
 .login-signup-btn {
   width: 100%;
   padding: 10px;
-  background-color: #151515;  
-  color: #fff;
+  background-color: #3e3f44;  
+  color: #ffffff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
+    margin-top: 20px;
+  }
+   
 
 .login-signup-btn:hover {
   background-color: #151515; 
+}
+.login-link{
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .sign-in-link {
@@ -167,9 +188,11 @@ label {
   display: block;
   margin-top: 10px;
   text-decoration: none;
-  color: #007bff;
+  color: #ffffff;
 }
- 
+.sign-in-link:hover {
+  color: #848484;
+}
 .nav-links li {
   margin-left: 20px; 
 }
@@ -184,12 +207,11 @@ label {
 }
 
 
-.login-signup-btn {
-  margin-top: 10px;
-}
+ 
 
 label {
   margin-top: 10px;
+  color: white;
 }
 
 /*--------------sign in page-------------*/
@@ -201,7 +223,6 @@ label {
 
 }
 
- 
 .signup-form {
   text-align: center;
 }
@@ -236,12 +257,16 @@ label{
   height: 50px;  
   font-size: 1.2rem;  
 }
+h1, h2{
+  color: white;
+  font-size: 2em;
+}
 .edit-link{
   font-size: 20px;
   color: rgb(67, 59, 205);
 }
 .edit-link:hover {
-  color: #ff7171; /* Change the text color on hover */
+  color: #ff7171;  
 }
 
 /*--------------create-post  page-------------*/
@@ -260,22 +285,27 @@ label{
  .comment{
   margin-top: 50px;;
  }
+ .meta{
+  color: white;
+  font-size: 15px;;
+ }
  .text{
   font-size: 20px;
+  color: white;
  }
 
  p{
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 20px;
  }
 
  #comment-subtitle{
-color: grey;
+color: rgb(57, 57, 57);
 font-size: 15px;
  }
 b{
-  color: #3c3c3c;
+  color: #838383;
  }
  
 /*-----------edit post------------*/
