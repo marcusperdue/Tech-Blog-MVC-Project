@@ -89,6 +89,9 @@ ul.post-list li {
   font-weight: bold;
   font-size: 25px;
 }
+.post-name a:hover {
+  color: #ffea71; /* Change the text color on hover */
+}
 
 .blog-card {
   background-color: #fff; 
@@ -98,7 +101,7 @@ ul.post-list li {
   margin: 10px;  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
   transition: transform 0.2s, box-shadow 0.2s;  
-  
+  width: 500px;
 }
 
  
@@ -218,7 +221,7 @@ label{
   margin-top: 10px;
 }
  
-
+ 
 
 /*--------------dashboard page-------------*/
  
@@ -232,6 +235,13 @@ label{
   width: 200px;  
   height: 50px;  
   font-size: 1.2rem;  
+}
+.edit-link{
+  font-size: 20px;
+  color: rgb(67, 59, 205);
+}
+.edit-link:hover {
+  color: #ff7171; /* Change the text color on hover */
 }
 
 /*--------------create-post  page-------------*/
@@ -255,5 +265,23 @@ label{
  }
 
  p{
+  color: black;
+  font-weight: bold;
   font-size: 20px;
  }
+
+ #comment-subtitle{
+color: grey;
+font-size: 15px;
+ }
+b{
+  color: #3c3c3c;
+ }
+ 
+/*-----------edit post------------*/
+ .new-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;  
+}
