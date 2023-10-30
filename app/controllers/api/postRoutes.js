@@ -3,8 +3,8 @@ const {
     User,
     Post,
     Comment
-} = require('../../models');
-const withAuth = require('../../utils/auth');
+} = require('../../../models');
+const withAuth = require('../../../utils/auth');
 
 router.get("/", (req, res) => {
     Post.findAll({
