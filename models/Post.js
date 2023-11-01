@@ -1,3 +1,4 @@
+// Post Model Definition and Database Synchronization
 const {
     Model,
     DataTypes

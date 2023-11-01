@@ -1,3 +1,4 @@
+// Comment Model Definition
 const {
     Model,
     DataTypes

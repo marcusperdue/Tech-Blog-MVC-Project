@@ -39,10 +39,10 @@ To install this project, follow these steps:
 4. Set Up MySQL Database: 
 ```
 DB_NAME=tech_blog_db 
-DB_USER=root 
+DB_USER=your_username
 DB_PASSWORD=your_password 
 DB_HOST=localhost 
-DB_PORT=3306
+DB_PORT=your_port
 ```
 5. Start the Application: ```npm start```
 

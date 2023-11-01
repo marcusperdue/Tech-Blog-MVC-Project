@@ -1,3 +1,4 @@
+// User Model Definition, Database Synchronization, and Password Handling
 const {
     Model,
     DataTypes

@@ -1,3 +1,4 @@
+// Server Configuration for The Tech Blog App
 const path = require('path');
 const express = require('express');
 const routes = require('./controllers');
@@ -13,6 +14,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// Session configuration
 const sess = {
     secret: process.env.DB_SECRET,
     cookie: {},
@@ -25,19 +27,24 @@ const sess = {
     })
 };
 
- 
+ // Handlebars template engine setup
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Body parsing middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Session middleware
 app.use(session(sess));
 
+// Routes setup
 app.use(routes);
 
+// Start the server and sync with the database
 sequelize.sync().then(() => {
     app.listen(PORT, () => {
         console.log(`App listening on port ${PORT}!`);

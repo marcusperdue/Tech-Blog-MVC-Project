@@ -1,3 +1,4 @@
+// Express Router Configuration for Comment Routes (API)
 const router = require('express').Router();
 const {
     User,
