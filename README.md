@@ -19,11 +19,12 @@ Tech Blog is a Content Management System blog site made for developers, tech ent
 ## Table of Contents
 
 * [Installation](#installation)
-* [Usage](#usage)
+* [Heroku Deploy](#heroku)
+* [Technologies Used](#technologies)
 * [License](#license)
 * [Contact](#contact)
-* [Technologies Used](#technologies)
-* [Demo](#demo)
+
+
 
 
 ## Installation
@@ -48,9 +49,10 @@ DB_PORT=your_port
 
 
 
-## Demo
+## Heroku
+[Tech Blog Website](https://powerful-brushlands-75865-4619707f144b.herokuapp.com/)
 
- 
+ [![Tech Blog Website](./public/images/Screenshot%202023-10-31%20at%209.52.24%20PM.png)](https://powerful-brushlands-75865-4619707f144b.herokuapp.com/)
 
 ## Technologies
 * Handlebars.js: A powerful templating engine for creating dynamic views.
