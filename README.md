@@ -37,7 +37,7 @@ To install this project, follow these steps:
 
 3. Install Dependencies: ```npm install```
 
-4. Set Up MySQL Database: 
+4. Set Up .env: 
 ```
 DB_NAME=tech_blog_db 
 DB_USER=your_username
